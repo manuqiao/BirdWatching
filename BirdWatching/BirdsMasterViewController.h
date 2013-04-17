@@ -9,9 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @class BirdsDetailViewController;
+@class BirdSightingDataController;
 
 @interface BirdsMasterViewController : UITableViewController
 
 @property (strong, nonatomic) BirdsDetailViewController *detailViewController;
-
+@property (strong, nonatomic) BirdSightingDataController *dataController;
 @end
