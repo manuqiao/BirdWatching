@@ -139,6 +139,11 @@
         [[segue destinationViewController] setDetailItem:object];
     }
      */
+    if ([[segue identifier] isEqualToString:@"ShowSightingDetails"]) {
+        BirdsDetailViewController *detailViewController = [segue destinationViewController];
+        
+        detailViewController.sighting = [self.dataController objectInListAtIndex:[self.tableView indexPathForSelectedRow].row];
+    }
 }
 
 @end

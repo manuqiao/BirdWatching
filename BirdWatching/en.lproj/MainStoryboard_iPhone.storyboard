@@ -159,6 +159,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="i2f-ML-Mel"/>
+                    <connections>
+                        <outlet property="birdNameLabel" destination="W9c-eh-GB7" id="zeH-fO-glw"/>
+                        <outlet property="dateLabel" destination="bRF-yq-RVt" id="5wO-hB-uYo"/>
+                        <outlet property="locationLabel" destination="ub1-rq-Qs1" id="67E-cg-yhY"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="670-tT-wZM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
