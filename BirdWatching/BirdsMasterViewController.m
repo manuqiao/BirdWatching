@@ -9,8 +9,6 @@
 #import "BirdsMasterViewController.h"
 
 #import "BirdsDetailViewController.h"
-#import "BirdSightingDataController.h"
-#import "BirdSighting.h"
 /*
 @interface BirdsMasterViewController () {
     NSMutableArray *_objects;
@@ -26,7 +24,6 @@
         self.contentSizeForViewInPopover = CGSizeMake(320.0, 600.0);
     }
     [super awakeFromNib];
-    self.dataController = [[BirdSightingDataController alloc] init];
 }
 
 - (void)viewDidLoad
@@ -67,24 +64,15 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [self.dataController countOfList];
+    return _objects.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"BirdSightingCell";
-    
-    static NSDateFormatter *formatter = nil;
-    if (formatter == nil) {
-        formatter = [[NSDateFormatter alloc] init];
-        [formatter setDateStyle:NSDateFormatterMediumStyle];
-    }
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    
-    BirdSighting *sightingAtIndex = [self.dataController objectInListAtIndex:indexPath.row];
-    [[cell textLabel] setText:sightingAtIndex.name];
-    [[cell detailTextLabel] setText:[formatter stringFromDate:(NSDate *)sightingAtIndex.date]];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
 
+    NSDate *object = _objects[indexPath.row];
+    cell.textLabel.text = [object description];
     return cell;
 }
 
@@ -123,8 +111,8 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
-       // NSDate *object = _objects[indexPath.row];
-       // self.detailViewController.detailItem = object;
+        NSDate *object = _objects[indexPath.row];
+        self.detailViewController.detailItem = object;
     }
 }
 
@@ -132,8 +120,8 @@
 {
     if ([[segue identifier] isEqualToString:@"showDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-       // NSDate *object = _objects[indexPath.row];
-        //[[segue destinationViewController] setDetailItem:object];
+        NSDate *object = _objects[indexPath.row];
+        [[segue destinationViewController] setDetailItem:object];
     }
 }
 
