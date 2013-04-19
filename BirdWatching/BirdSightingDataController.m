@@ -30,7 +30,7 @@
     self.masterBirdSightingList = sightingList;
     BirdSighting *sighting;
     NSDate *today = [NSDate date];
-    sighting = [[BirdSighting alloc] initWithName:@"Pigeon" location:@"Everyware" date:today];
+    sighting = [[BirdSighting alloc] initWithName:@"Pigeon" location:@"Everywhere" date:today];
     [self addBirdSightingWithSighting:sighting];
 }
 
@@ -49,6 +49,7 @@
 - (BirdSighting *)objectInListAtIndex:(NSUInteger)theIndex {
     return  [self.masterBirdSightingList objectAtIndex:theIndex];
 }
+
 - (void)addBirdSightingWithSighting:(BirdSighting *)sighting {
     [self.masterBirdSightingList addObject:sighting];
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E9E45D61721337A0038419D /* AddSightingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E9E45D51721337A0038419D /* AddSightingViewController.m */; };
 		1E9FBAF4171B8807002EFF4B /* BirdSighting.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E9FBAF3171B8807002EFF4B /* BirdSighting.m */; };
 		1E9FBAF8171B8D73002EFF4B /* BirdSightingDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E9FBAF7171B8D73002EFF4B /* BirdSightingDataController.m */; };
 		53B84324171AF28000364786 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53B84323171AF28000364786 /* UIKit.framework */; };
@@ -18,13 +19,14 @@
 		53B84336171AF28100364786 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 53B84335171AF28100364786 /* Default.png */; };
 		53B84338171AF28100364786 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 53B84337171AF28100364786 /* Default@2x.png */; };
 		53B8433A171AF28100364786 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 53B84339171AF28100364786 /* Default-568h@2x.png */; };
-		53B8433D171AF28100364786 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53B8433B171AF28100364786 /* MainStoryboard_iPhone.storyboard */; };
-		53B84340171AF28100364786 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53B8433E171AF28100364786 /* MainStoryboard_iPad.storyboard */; };
+		53B8433D171AF28100364786 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53B8433B171AF28100364786 /* MainStoryboard.storyboard */; };
 		53B84343171AF28100364786 /* BirdsMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53B84342171AF28100364786 /* BirdsMasterViewController.m */; };
 		53B84346171AF28100364786 /* BirdsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53B84345171AF28100364786 /* BirdsDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E9E45D41721337A0038419D /* AddSightingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddSightingViewController.h; sourceTree = "<group>"; };
+		1E9E45D51721337A0038419D /* AddSightingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddSightingViewController.m; sourceTree = "<group>"; };
 		1E9FBAF2171B8807002EFF4B /* BirdSighting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BirdSighting.h; sourceTree = "<group>"; };
 		1E9FBAF3171B8807002EFF4B /* BirdSighting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BirdSighting.m; sourceTree = "<group>"; };
 		1E9FBAF6171B8D73002EFF4B /* BirdSightingDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BirdSightingDataController.h; sourceTree = "<group>"; };
@@ -42,8 +44,7 @@
 		53B84335171AF28100364786 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		53B84337171AF28100364786 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		53B84339171AF28100364786 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		53B8433C171AF28100364786 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
-		53B8433F171AF28100364786 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		53B8433C171AF28100364786 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		53B84341171AF28100364786 /* BirdsMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BirdsMasterViewController.h; sourceTree = "<group>"; };
 		53B84342171AF28100364786 /* BirdsMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BirdsMasterViewController.m; sourceTree = "<group>"; };
 		53B84344171AF28100364786 /* BirdsDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BirdsDetailViewController.h; sourceTree = "<group>"; };
@@ -108,8 +109,9 @@
 				1E9FBAF5171B881C002EFF4B /* model */,
 				53B84332171AF28100364786 /* BirdsAppDelegate.h */,
 				53B84333171AF28100364786 /* BirdsAppDelegate.m */,
-				53B8433B171AF28100364786 /* MainStoryboard_iPhone.storyboard */,
-				53B8433E171AF28100364786 /* MainStoryboard_iPad.storyboard */,
+				53B8433B171AF28100364786 /* MainStoryboard.storyboard */,
+				1E9E45D41721337A0038419D /* AddSightingViewController.h */,
+				1E9E45D51721337A0038419D /* AddSightingViewController.m */,
 				53B84341171AF28100364786 /* BirdsMasterViewController.h */,
 				53B84342171AF28100364786 /* BirdsMasterViewController.m */,
 				53B84344171AF28100364786 /* BirdsDetailViewController.h */,
@@ -189,8 +191,7 @@
 				53B84336171AF28100364786 /* Default.png in Resources */,
 				53B84338171AF28100364786 /* Default@2x.png in Resources */,
 				53B8433A171AF28100364786 /* Default-568h@2x.png in Resources */,
-				53B8433D171AF28100364786 /* MainStoryboard_iPhone.storyboard in Resources */,
-				53B84340171AF28100364786 /* MainStoryboard_iPad.storyboard in Resources */,
+				53B8433D171AF28100364786 /* MainStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,6 +208,7 @@
 				53B84346171AF28100364786 /* BirdsDetailViewController.m in Sources */,
 				1E9FBAF4171B8807002EFF4B /* BirdSighting.m in Sources */,
 				1E9FBAF8171B8D73002EFF4B /* BirdSightingDataController.m in Sources */,
+				1E9E45D61721337A0038419D /* AddSightingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,20 +223,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		53B8433B171AF28100364786 /* MainStoryboard_iPhone.storyboard */ = {
+		53B8433B171AF28100364786 /* MainStoryboard.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				53B8433C171AF28100364786 /* en */,
 			);
-			name = MainStoryboard_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		53B8433E171AF28100364786 /* MainStoryboard_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				53B8433F171AF28100364786 /* en */,
-			);
-			name = MainStoryboard_iPad.storyboard;
+			name = MainStoryboard.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -305,6 +299,7 @@
 				GCC_PREFIX_HEADER = "BirdWatching/BirdWatching-Prefix.pch";
 				INFOPLIST_FILE = "BirdWatching/BirdWatching-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -316,6 +311,7 @@
 				GCC_PREFIX_HEADER = "BirdWatching/BirdWatching-Prefix.pch";
 				INFOPLIST_FILE = "BirdWatching/BirdWatching-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
